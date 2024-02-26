@@ -1,0 +1,61 @@
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.containertarjetas {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+}
+
+.tituloseccion {
+  font-weight: 800;
+  font-size: 2.5rem;
+  font-family: "cairo";
+  margin: 0.6rem;
+  text-align: center;
+}
+
+/* CONTACTO */
+
+.contactoContainer {
+  background-color: var(--blanco);
+  width: 95vw;
+}
+
+.cardContacto {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContacto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mapa {
+  border: 2px solid var(--rojo);
+  border-radius: 10px;
+}
+.mapa iframe {
+  border-radius: 10px;
+}
+@media (max-width: 1250px) {
+  .containertarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .containertarjetas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

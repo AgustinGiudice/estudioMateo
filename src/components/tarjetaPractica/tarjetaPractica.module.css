@@ -1,0 +1,54 @@
+.tarjetaPracticaContainer {
+  width: 100%;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tituloContainer {
+  background-color: var(--rojo);
+  height: 3rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.tarjetaPracticaContainer div h2 {
+  margin: 0;
+  font-family: "Eczar", serif;
+  color: var(--blanco);
+  font-weight: 100;
+}
+.lineaHorizontal {
+  border: none;
+  height: 1px;
+  background: #333;
+  margin: 1rem 0;
+  box-shadow: 0 0 0.5px #333;
+  width: 80%;
+}
+.contenidoContainer {
+  padding: 1rem;
+}
+.nombre {
+  font-weight: 900;
+}
+
+.nomargin {
+  margin: 0;
+}
+.buttonContactar {
+  border: none;
+  border-radius: 1px;
+  width: 9rem;
+  height: 2rem;
+  color: var(--blanco);
+  background-color: var(--rojo);
+  margin-top: 2rem;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+}
