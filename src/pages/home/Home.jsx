@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import { VscMail } from "react-icons/vsc";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
+import ChatBot from "../../components/chatBot/ChatBot";
 function Home() {
   const iconSize = 33;
   const headerHeight = 100;
@@ -83,6 +84,7 @@ function Home() {
           <div></div>
         </section>
       </div>
+      <ChatBot />
     </>
   );
 }
