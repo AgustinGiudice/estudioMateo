@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './ChatBot.css'; // Asegúrate de tener este archivo CSS en tu proyecto
-// import bot png
 import bot from '../../assets/bot.png';
 
-// Datos de las áreas del derecho
 const derechoData = [
     {
       area: "Derecho Familiar",
@@ -36,7 +34,7 @@ const derechoData = [
   ]
   
 function ChatBot() {
-  const [chatOpen, setChatOpen] = useState(true); // Cambiado a true para que el chat esté abierto por defecto
+  const [chatOpen, setChatOpen] = useState(true); 
   const [messages, setMessages] = useState([{text: "¡Hola! ¿Que tipo de derecho le interesa encontrar?", from: "bot"}]);
 
   const mensajePredeterminado = `Parece que no puedo encontrar una respuesta específica basada en tu mensaje. 
@@ -44,19 +42,16 @@ function ChatBot() {
   Derecho Penal, Derecho Civil\n\nPor favor, escribe el área de derecho en la que necesitas asistencia.`; 
 
 
-  // Función para simular el envío de un mensaje
   const sendMessage = (event) => {
     event.preventDefault();
     const messageText = event.target.message.value.trim();
     if (messageText) {
       setMessages([...messages, {text: messageText, from: "user"}]);
-      // Lógica para identificar palabras clave y generar respuesta
       const respuesta = derechoData.find(d => messageText.toLowerCase().includes(d.palabra_clave));
       if (respuesta) {
         const respuestaBot = `Nuestro abogado especialista en ${respuesta.area} es ${respuesta.abogado}. Puede contactarlo al ${respuesta.numero}`;
         setMessages(messages => [...messages, {text: respuestaBot, from: "bot"}]);
       } else {
-        // Si no encuentra una coincidencia, envía el mensaje predeterminado
         setMessages(messages => [...messages, {text: mensajePredeterminado, from: "bot"}]);
       }
 
