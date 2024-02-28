@@ -1,0 +1,21 @@
+.footer {
+  display: grid;
+  grid-template-columns: 33% 66%;
+
+  width: 100%;
+  background-color: var(--gris);
+  height: 20rem;
+}
+
+.blanco {
+  background-color: var(--blanco);
+}
+
+.gris {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gris nav a {
+  display: flex;
+}

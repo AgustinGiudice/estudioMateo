@@ -10,9 +10,11 @@ export function Navbar() {
       />
 
       <div className={styles.enlaces}>
-        <a href="/areas">Áreas De Práctica</a>
-        <a href="">Contacto</a>
-        <a href="/nosotros">Nosotros</a>
+        <nav>
+          <a href="/areas">Áreas De Práctica</a>
+          <a href="">Contacto</a>
+          <a href="/nosotros">Nosotros</a>
+        </nav>
       </div>
     </nav>
   );
