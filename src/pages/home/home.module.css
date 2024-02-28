@@ -1,3 +1,4 @@
+/* NUESTRAS AREAS */
 .containerHome {
   display: flex;
   flex-direction: column;
@@ -18,8 +19,19 @@
   font-weight: 800;
   font-size: 2.5rem;
   font-family: "cairo";
-  margin: 0.6rem;
+  margin-bottom: 2rem;
   text-align: center;
+}
+
+@media (max-width: 1250px) {
+  .containertarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .containertarjetas {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* CONTACTO */
@@ -27,13 +39,29 @@
 .contactoContainer {
   background-color: var(--blanco);
   width: 95vw;
+  padding: 2rem 6rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .cardContacto {
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  /* MODIFICAR EL CENTER PARA QUE SOLO PASE EN EL DIV DE ARRIBA Y NO EN EL MAPA EN TAMAÑO CHICO */
+}
+
+.espaciado {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cardContacto div p:first-child {
+  color: var(--rojo);
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .infoContacto {
@@ -49,13 +77,21 @@
 .mapa iframe {
   border-radius: 10px;
 }
+
 @media (max-width: 1250px) {
-  .containertarjetas {
-    grid-template-columns: repeat(2, 1fr);
+  .cardContacto {
+    flex-direction: column;
   }
 }
-@media (max-width: 550px) {
-  .containertarjetas {
-    grid-template-columns: repeat(1, 1fr);
+@media (max-width: 780px) {
+  .contactoContainer {
+    padding: 2rem 1rem;
+  }
+  .cardContacto {
+    align-items: normal;
+  }
+
+  .mapa iframe {
+    width: 100%;
   }
 }
