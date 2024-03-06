@@ -9,26 +9,36 @@ export function Footer() {
         <img
           src={imgLogo}
           alt="Logo Estudio Juridico Mateo"
-          className={styles.imgHeader}
+          className={styles.imgFooter}
         />
         <p>COPYRIGHT © estudioJuridicoMateo 2024</p>
       </div>
       <div className={styles.gris}>
         <div>
-          <p>Áreas de práctica</p>
+          <h4 className={styles.title}>Áreas de práctica</h4>
           <nav>
-            <a href="/">Derecho Laboral</a>
-            <a href="/">Derecho Civil</a>
-            <a href="/">Derecho Comercial</a>
-            <a href="/">Derecho Familiar</a>
+            <ul className={styles.navList}>
+              <li className={styles.navItem}>
+                <a href="/">Derecho Laboral</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="/">Derecho Civil</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="/">Derecho Comercial</a>
+              </li>
+              <li className={styles.navItem}>
+                <a href="/">Derecho Familiar</a>
+              </li>
+            </ul>
           </nav>
         </div>
         <div>
           <div>
-            <p>Redes</p>
+            <h4 className={styles.title}>Redes</h4>
           </div>
           <div>
-            <IoLogoInstagram size={33} />
+            <IoLogoInstagram size={33} color="white" />
           </div>
         </div>
       </div>

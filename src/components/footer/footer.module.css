@@ -1,21 +1,36 @@
 .footer {
   display: grid;
   grid-template-columns: 33% 66%;
-
   width: 100%;
   background-color: var(--gris);
   height: 20rem;
 }
 
 .blanco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
   background-color: var(--blanco);
 }
-
+.imgFooter {
+  width: 50%;
+}
 .gris {
   display: flex;
-  justify-content: space-between;
+  padding: 2em;
+  justify-content: space-evenly;
 }
-
-.gris nav a {
-  display: flex;
+.title {
+  color: var(--blanco);
+  font-size: 1.2em;
+}
+.navList {
+  list-style: none;
+  padding: 0;
+}
+.navItem a {
+  color: var(--blanco);
+  text-decoration: none;
 }

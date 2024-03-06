@@ -40,12 +40,14 @@
 }
 .buttonContactar {
   border: none;
-  border-radius: 1px;
+  border-radius: 0.2em;
   width: 9rem;
   height: 2rem;
-  color: var(--blanco);
   background-color: var(--rojo);
   margin-top: 2rem;
+  color: var(--blanco);
+  text-decoration: none;
+  text-align: center;
 }
 
 .centrar {

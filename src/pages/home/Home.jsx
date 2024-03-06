@@ -3,10 +3,13 @@ import styles from "./home.module.css";
 import { VscMail } from "react-icons/vsc";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
+import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
+
 function Home() {
   const iconSize = 33;
   const headerHeight = 100;
+
   return (
     <>
       <div
@@ -20,7 +23,7 @@ function Home() {
               area="Derecho Familiar"
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             Comunicación con los hijos - Divorcio"
-              abogado="Abogado Ramiro Mateo"
+              abogado="Ramiro Mateo"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
@@ -28,21 +31,21 @@ function Home() {
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             
           Comunicación con los hijos - Divorcio"
-              abogado="Abogado Ramiro Mateo"
+              abogado="Ramiro Mateo"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
               area="Derecho Familiar"
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             Comunicación con los hijos - Divorcio"
-              abogado="Abogado Ramiro Mateo"
+              abogado="Ramiro Mateo"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
               area="Derecho Familiar"
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             Comunicación con los hijos - Divorcio"
-              abogado="Abogado Ramiro Mateo"
+              abogado="Ramiro Mateo"
               numero="+54 11 4743-8758"
             />
           </div>
@@ -52,9 +55,12 @@ function Home() {
           <div className={styles.cardContacto}>
             <div className={styles.espaciado}>
               <div>
-                <p>Aguardamos tu consulta.</p>
+                <p>Aguardamos tu consulta</p>
               </div>
-
+              <div className={styles.infoContacto}>
+                <IoCompassOutline size={iconSize} />
+                <p>Avenida Centenario 725</p>
+              </div>
               <div className={styles.infoContacto}>
                 <VscMail size={iconSize} />
                 <p>consultas@ramiromateo.com</p>
@@ -83,7 +89,7 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer}>
-          <div></div>
+         <div></div>
         </section>
       </div>
       <ChatBot2 />

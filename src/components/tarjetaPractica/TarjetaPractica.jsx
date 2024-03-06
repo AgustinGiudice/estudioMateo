@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import styles from "./tarjetaPractica.module.css";
 
 function TarjetaPractica({ area, contenido, abogado, numero }) {
+  const link = abogado.replace(/ /g, "-");
+  console.log(link);
   return (
     <>
       <div className={styles.tarjetaPracticaContainer}>
@@ -16,12 +19,14 @@ function TarjetaPractica({ area, contenido, abogado, numero }) {
           </div>
 
           <div>
-            <p className={styles.nombre}> {abogado}</p>
+            <p className={styles.nombre}>Abogado {abogado}</p>
             <p> {numero}</p>
           </div>
 
           <div className={styles.centrar}>
-            <button className={styles.buttonContactar}>Contactar</button>
+            <Link to={`/abogado/${link}`} className={styles.buttonContactar}>
+              Contactar
+            </Link>
           </div>
         </div>
       </div>
