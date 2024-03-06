@@ -22,7 +22,7 @@ function Abogados() {
     )}`;
 
     return (
-      <Link to={whatsappLink} target="_blank">
+      <Link to={whatsappLink} target="_blank" className={styles.button}>
         Contactar
       </Link>
     );
@@ -34,7 +34,7 @@ function Abogados() {
       style={{ paddingTop: headerHeight }}
     >
       <div className={styles.sectionContainer}>
-        <h1>
+        <h1 className={styles.title}>
           {derecho} - Abogado {nombreAbogado}
         </h1>
         <div className={styles.derechoContainer}>
@@ -60,37 +60,31 @@ function Abogados() {
             </li>
           </ul>
         </div>
-
         <WhatsappLink phoneNumber="5491161746234" message={message} />
       </div>
-      <div className={styles.sectionContainer}>
-        <h2 className={styles.tituloseccion}>Contacto</h2>
-        <div className={styles.cardContacto}>
-          <div className={styles.espaciado}>
-            <div>
-              <p>Aguardamos tu consulta</p>
-            </div>
-            <div className={styles.infoContacto}>
-              <IoCompassOutline size={iconSize} />
-              <p>Avenida Centenario 725</p>
-            </div>
-            <div className={styles.infoContacto}>
-              <VscMail size={iconSize} />
-              <p>consultas@ramiromateo.com</p>
-            </div>
-            <div className={styles.infoContacto}>
-              <FaWhatsapp size={iconSize} />
-              <p>+54 9 11 3798-4208</p>
-            </div>
-            <div className={styles.infoContacto}>
-              <IoLogoInstagram size={iconSize} />
-              <p>@estudiojuridicomateo</p>
-            </div>
+      <div className={`${styles.sectionContainer} ${styles.centerSection}`}>
+        <h2 className={styles.title}>Contacto</h2>
+        <div className={styles.containerContacto}>
+          <div className={styles.infoContacto}>
+            <IoCompassOutline size={iconSize} />
+            <p>Avenida Centenario 725</p>
+          </div>
+          <div className={styles.infoContacto}>
+            <VscMail size={iconSize} />
+            <p>consultas@ramiromateo.com</p>
+          </div>
+          <div className={styles.infoContacto}>
+            <FaWhatsapp size={iconSize} />
+            <p>+54 9 11 3798-4208</p>
+          </div>
+          <div className={styles.infoContacto}>
+            <IoLogoInstagram size={iconSize} />
+            <p>@estudiojuridicomateo</p>
           </div>
         </div>
       </div>
       <div className={styles.sectionContainer}>
-        <h2>Titulos | Capacitaciones</h2>
+        <h2 className={styles.title}>Titulos | Capacitaciones</h2>
         <div>
           <h3>Estudios realizados en el Colegio de Abogados de San Isidro</h3>
           <ul>

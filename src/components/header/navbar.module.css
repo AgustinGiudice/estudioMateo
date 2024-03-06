@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 20em;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -11,7 +11,17 @@
   z-index: 1000;
   height: 5rem;
 }
-
+@media (width <1440px) {
+  .headerContainer {
+    padding: 0.5rem 10em;
+  }
+}
+@media (width <=768px) {
+  .headerContainer {
+    padding: 0.5rem 2em;
+    grid-template-columns: 1fr 1fr;
+  }
+}
 img {
   max-width: 100%;
 }

@@ -1,0 +1,53 @@
+.containerAbogados {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  gap: 1em;
+}
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.derechoContainer {
+  background-color: var(--blanco);
+  padding: 1em;
+  border-radius: 1.5em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.button {
+  padding: 0.2em 1.5em;
+  text-decoration: none;
+  width: 150px;
+  color: var(--blanco);
+  background-color: var(--rojo);
+  border-radius: 0.5em;
+  align-self: center;
+  text-align: center;
+}
+.containerContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.infoContacto {
+  display: flex;
+  gap: 0.5em;
+}
+
+.sectionContainer.centerSection::after,
+.sectionContainer.centerSection::before {
+  content: "";
+  border: 1px solid rgba(10, 10, 10, 0.4);
+  width: 70%;
+  align-self: center;
+  margin: 1em;
+}
