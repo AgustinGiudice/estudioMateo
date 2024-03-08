@@ -13,7 +13,6 @@
   gap: 2rem;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  padding: 5em;
 }
 
 .tituloseccion {
@@ -32,6 +31,7 @@
 @media (max-width: 550px) {
   .containertarjetas {
     grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
   }
 }
 
@@ -72,11 +72,13 @@
 }
 
 .mapa {
-  border: 2px solid var(--rojo);
   border-radius: 10px;
+  border: 2px solid var(--rojo);
+  height: max-content;
 }
 .mapa iframe {
   border-radius: 10px;
+  border: 0px;
 }
 
 @media (max-width: 1250px) {
