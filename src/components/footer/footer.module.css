@@ -1,9 +1,8 @@
 .footer {
   display: grid;
-  grid-template-columns: 33% 66%;
+  grid-template-columns: 40% 60%;
   width: 100%;
   background-color: var(--gris);
-  height: 20rem;
 }
 
 .blanco {
@@ -16,6 +15,20 @@
 }
 .imgFooter {
   width: 50%;
+}
+@media (width <=1024px) {
+  .imgFooter {
+    width: 80%;
+  }
+}
+@media (width <= 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .blanco {
+    padding: 2em;
+  }
 }
 .gris {
   display: flex;
