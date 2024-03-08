@@ -5,6 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
+import imgNosotros from "../../assets/nosotros.jpg";
 
 function Home() {
   const iconSize = 33;
@@ -89,7 +90,26 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer}>
-         <div></div>
+          <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
+          <div className={styles.nosotrosSubContainer}>
+            <div>
+              <img
+                src={imgNosotros}
+                alt="Logo Estudio Juridico Mateo"
+                className={styles.imgNosotros}
+              />
+            </div>
+            <div className={styles.textoNosotros}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum nostrum asperiores molestias, quos labore repellendus
+              vel velit ratione modi, quia quas esse magnam facere soluta ipsa
+              accusantium! Laboriosam, numquam quia. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Reiciendis velit nisi dicta natus
+              quibusdam quos vero quod. Minima iste officiis libero esse
+              laudantium, molestiae cum tenetur, dolorem temporibus repellendus
+              eos?
+            </div>
+          </div>
         </section>
       </div>
       <ChatBot2 />

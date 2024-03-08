@@ -95,3 +95,27 @@
     width: 100%;
   }
 }
+
+/* NOSOTROS  */
+.nosotrosContainer {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  margin-bottom: 2rem;
+}
+.nosotrosSubContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.imgNosotros {
+  width: 40vw;
+  border-radius: 5px;
+}
+
+.textoNosotros {
+  width: 40vw;
+}
