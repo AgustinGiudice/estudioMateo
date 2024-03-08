@@ -97,22 +97,23 @@ function Home() {
         <section className={styles.nosotrosContainer} id="nosotros">
           <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
           <div className={styles.nosotrosSubContainer}>
-            <div>
-              <img
-                src={imgNosotros}
-                alt="Logo Estudio Juridico Mateo"
-                className={styles.imgNosotros}
-              />
-            </div>
+            <img
+              src={imgNosotros}
+              alt="Logo Estudio Juridico Mateo"
+              className={styles.imgNosotros}
+            />
+
             <div className={styles.textoNosotros}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum nostrum asperiores molestias, quos labore repellendus
-              vel velit ratione modi, quia quas esse magnam facere soluta ipsa
-              accusantium! Laboriosam, numquam quia. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Reiciendis velit nisi dicta natus
-              quibusdam quos vero quod. Minima iste officiis libero esse
-              laudantium, molestiae cum tenetur, dolorem temporibus repellendus
-              eos?
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum nostrum asperiores molestias, quos labore repellendus
+                vel velit ratione modi, quia quas esse magnam facere soluta ipsa
+                accusantium! Laboriosam, numquam quia. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Reiciendis velit nisi dicta
+                natus quibusdam quos vero quod. Minima iste officiis libero esse
+                laudantium, molestiae cum tenetur, dolorem temporibus
+                repellendus eos?
+              </p>
             </div>
           </div>
         </section>
