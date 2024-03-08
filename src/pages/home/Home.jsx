@@ -124,14 +124,14 @@ function Home() {
       ) : (
         <div
           style={{
-            position: "fixed",
-            bottom: "30vh",
-            right: "2rem",
-            cursor: "pointer",
+            position: 'fixed',
+            bottom: '10vh',
+            right: '2rem',
+            cursor: 'pointer',
           }}
           onClick={handleChatBotToggle}
         >
-          <BsChatDots size={iconSize * 2} /> {/* Icono de chat más grande */}
+          <BsChatDots size={iconSize * 1.8} className={styles.chatBotIcon} />
         </div>
       )}
     </>

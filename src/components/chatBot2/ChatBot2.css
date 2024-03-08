@@ -52,7 +52,7 @@
   }
   
   .message.user {
-    background-color: #007bff;
+    background-color: var(--azul);
     color: #ffffff;
     align-self: flex-end;
   }
@@ -70,7 +70,15 @@
   
   .message-form button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .option-button {
+    padding: 5px 10px;
+    background-color: var(--azul);
     color: white;
     border: none;
     border-radius: 5px;
