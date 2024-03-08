@@ -21,6 +21,7 @@
     width: 80%;
   }
 }
+
 @media (width <= 768px) {
   .footer {
     display: flex;
@@ -28,6 +29,9 @@
   }
   .blanco {
     padding: 2em;
+  }
+  .imgFooter {
+    width: 50%;
   }
 }
 .gris {

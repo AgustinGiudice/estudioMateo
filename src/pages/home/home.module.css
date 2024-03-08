@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  margin: 0 10%;
 }
 
 .containertarjetas {
@@ -12,7 +13,7 @@
   gap: 2rem;
   justify-content: center;
   grid-template-columns: repeat(4, 1fr);
-  padding: 1rem;
+  padding: 5em;
 }
 
 .tituloseccion {
@@ -38,7 +39,7 @@
 
 .contactoContainer {
   background-color: var(--blanco);
-  width: 95vw;
+  width: 100%;
   padding: 2rem 6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
