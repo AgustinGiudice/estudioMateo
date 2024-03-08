@@ -5,10 +5,17 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
+import { BsChatDots } from 'react-icons/bs'; // Asumiendo que quieres usar este icono para el chat
+import { useState } from "react";
 
 function Home() {
+  const [isChatBotOpen, setIsChatBotOpen] = useState(false);
   const iconSize = 33;
   const headerHeight = 100;
+
+  // Función para manejar la apertura del ChatBot
+  const handleChatBotToggle = () => setIsChatBotOpen(!isChatBotOpen);
+
 
   return (
     <>
@@ -92,7 +99,22 @@ function Home() {
           <div></div>
         </section>
       </div>
-      <ChatBot2 />
+
+      {isChatBotOpen ? (
+        <ChatBot2 />
+      ) : (
+        <div
+          style={{
+            position: 'fixed',
+            bottom: '30vh',
+            right: '2rem',
+            cursor: 'pointer'
+          }}
+          onClick={handleChatBotToggle}
+        >
+          <BsChatDots size={iconSize * 2} /> {/* Icono de chat más grande */}
+        </div>
+      )}
     </>
   );
 }
