@@ -7,6 +7,7 @@ import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
 import { BsChatDots } from 'react-icons/bs'; // Asumiendo que quieres usar este icono para el chat
 import { useState } from "react";
+import imgNosotros from "../../assets/nosotros.jpg";
 
 function Home() {
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
@@ -85,9 +86,7 @@ function Home() {
               <iframe
                 title="Mapa Google"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13157.432866677329!2d-58.51838043016358!3d-34.46843590000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0304f527f4b%3A0x5ef62b1ac38b7593!2sEstudio%20Juridico%20Mateo!5e0!3m2!1ses!2sar!4v1708902231608!5m2!1ses!2sar"
-                width="700"
                 height="450"
-                style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -96,7 +95,26 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer}>
-          <div></div>
+          <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
+          <div className={styles.nosotrosSubContainer}>
+            <div>
+              <img
+                src={imgNosotros}
+                alt="Logo Estudio Juridico Mateo"
+                className={styles.imgNosotros}
+              />
+            </div>
+            <div className={styles.textoNosotros}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum nostrum asperiores molestias, quos labore repellendus
+              vel velit ratione modi, quia quas esse magnam facere soluta ipsa
+              accusantium! Laboriosam, numquam quia. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Reiciendis velit nisi dicta natus
+              quibusdam quos vero quod. Minima iste officiis libero esse
+              laudantium, molestiae cum tenetur, dolorem temporibus repellendus
+              eos?
+            </div>
+          </div>
         </section>
       </div>
 
