@@ -9,8 +9,8 @@ export function Navbar() {
         className={styles.imgHeader}
       />
 
-      <div className={styles.enlaces}>
-        <nav>
+      <div>
+        <nav className={styles.enlaces}>
           <a href="/areas">Áreas De Práctica</a>
           <a href="">Contacto</a>
           <a href="/nosotros">Nosotros</a>
