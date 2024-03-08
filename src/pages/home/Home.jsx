@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
-import { BsChatDots } from 'react-icons/bs'; // Asumiendo que quieres usar este icono para el chat
+import { BsChatDots } from "react-icons/bs"; // Asumiendo que quieres usar este icono para el chat
 import { useState } from "react";
 import imgNosotros from "../../assets/nosotros.jpg";
 
@@ -17,17 +17,15 @@ function Home() {
   // Función para manejar la apertura del ChatBot
   const handleChatBotToggle = () => setIsChatBotOpen(!isChatBotOpen);
 
-
   return (
     <>
       <div
         className={styles.containerHome}
         style={{ paddingTop: headerHeight }}
+        id="areas"
       >
         <div>
-          <h2 className={styles.tituloseccion} id="areas">
-            Áreas de práctica
-          </h2>
+          <h2 className={styles.tituloseccion}>Áreas de práctica</h2>
           <div className={styles.containertarjetas}>
             <TarjetaPractica
               area="Derecho Familiar"
@@ -60,10 +58,8 @@ function Home() {
             />
           </div>
         </div>
-        <section className={styles.contactoContainer}>
-          <h2 className={styles.tituloseccion} id="contacto">
-            Contacto
-          </h2>
+        <section className={styles.contactoContainer} id="contacto">
+          <h2 className={styles.tituloseccion}>Contacto</h2>
           <div className={styles.cardContacto}>
             <div className={styles.espaciado}>
               <div>
@@ -98,10 +94,8 @@ function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.nosotrosContainer}>
-          <h3 className={styles.tituloseccion} id="nosotros">
-            Sobre Nosotros
-          </h3>
+        <section className={styles.nosotrosContainer} id="nosotros">
+          <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
           <div className={styles.nosotrosSubContainer}>
             <div>
               <img
@@ -129,10 +123,10 @@ function Home() {
       ) : (
         <div
           style={{
-            position: 'fixed',
-            bottom: '30vh',
-            right: '2rem',
-            cursor: 'pointer'
+            position: "fixed",
+            bottom: "30vh",
+            right: "2rem",
+            cursor: "pointer",
           }}
           onClick={handleChatBotToggle}
         >
