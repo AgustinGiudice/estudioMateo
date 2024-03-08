@@ -11,9 +11,9 @@ export function Navbar() {
 
       <div>
         <nav className={styles.enlaces}>
-          <a href="/areas">Áreas De Práctica</a>
-          <a href="">Contacto</a>
-          <a href="/nosotros">Nosotros</a>
+          <a href="#areas">Áreas De Práctica</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#nosotros">Nosotros</a>
         </nav>
       </div>
     </nav>
