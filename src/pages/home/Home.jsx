@@ -18,7 +18,9 @@ function Home() {
         style={{ paddingTop: headerHeight }}
       >
         <div>
-          <h2 className={styles.tituloseccion}>Áreas de práctica</h2>
+          <h2 className={styles.tituloseccion} id="areas">
+            Áreas de práctica
+          </h2>
           <div className={styles.containertarjetas}>
             <TarjetaPractica
               area="Derecho Familiar"
@@ -52,7 +54,9 @@ function Home() {
           </div>
         </div>
         <section className={styles.contactoContainer}>
-          <h2 className={styles.tituloseccion}>Contacto</h2>
+          <h2 className={styles.tituloseccion} id="contacto">
+            Contacto
+          </h2>
           <div className={styles.cardContacto}>
             <div className={styles.espaciado}>
               <div>
@@ -88,7 +92,9 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer}>
-          <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
+          <h3 className={styles.tituloseccion} id="nosotros">
+            Sobre Nosotros
+          </h3>
           <div className={styles.nosotrosSubContainer}>
             <div>
               <img
