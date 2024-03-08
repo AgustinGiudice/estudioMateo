@@ -99,13 +99,13 @@
 
 /* NOSOTROS  */
 .nosotrosContainer {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0rem 1rem;
   margin-bottom: 2rem;
+  width: 100vw;
 }
 .nosotrosSubContainer {
   display: flex;
@@ -119,4 +119,16 @@
 
 .textoNosotros {
   width: 40vw;
+}
+@media (max-width: 1000px) {
+  .nosotrosSubContainer {
+    flex-direction: column;
+  }
+  .imgNosotros {
+    width: 90vw;
+  }
+
+  .textoNosotros {
+    width: 90vw;
+  }
 }
