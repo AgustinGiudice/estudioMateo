@@ -89,7 +89,7 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer}>
-         <div></div>
+          <div></div>
         </section>
       </div>
       <ChatBot2 />
