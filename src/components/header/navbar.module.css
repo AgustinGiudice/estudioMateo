@@ -16,7 +16,7 @@
     padding: 0.5rem 10em;
   }
 }
-@media (width <=1100px) {
+@media (width <=1256px) {
   .headerContainer {
     padding: 0.5rem 2em;
     grid-template-columns: 1fr 1fr;
@@ -39,7 +39,6 @@ img {
 }
 
 .enlaces a {
-  /* margin: 0 1rem; */
   text-decoration: none;
   color: var(--negro);
   font-family: "Cairo";
@@ -52,4 +51,59 @@ img {
 
 .imgHeader {
   width: 10rem;
+}
+
+/* Menú de hamburguesa */
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--negro);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 700px) {
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .enlaces {
+    display: none;
+  }
+
+  .menuIcon {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobileMenu a {
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--negro);
+    font-family: "Cairo";
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .mobileMenu a:hover {
+    background-color: var(--gris-claro);
+  }
 }
