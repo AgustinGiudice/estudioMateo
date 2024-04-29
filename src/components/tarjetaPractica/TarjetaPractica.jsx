@@ -22,7 +22,7 @@ function TarjetaPractica({ area, contenido, abogado, numero, link }) {
           </div>
 
           <div className={styles.centrar}>
-            <Link to={`/abogado/${link}`} className={styles.buttonContactar}>
+            <Link to={`/derechos/${link}`} className={styles.buttonContactar}>
               Contactar
             </Link>
           </div>
