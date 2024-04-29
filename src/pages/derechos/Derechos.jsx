@@ -6,15 +6,26 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 
-function Abogados() {
+function Derechos() {
   const headerHeight = 100;
   const iconSize = 33;
-  const { abogado } = useParams("abogados");
-  const nombreAbogado = abogado.replace(/-/g, " ");
-  const derecho = "Derecho Familiar";
+  const { derecho } = useParams("derecho");
   const [message, setMessage] = useState(
     `Hola soy <INSERTAR NOMBRE Y APELLUDO>, DNI <INSERTAR DNI> y quiero hacer una consulta sobre <INSERTAR CONSULTA>`
   );
+
+  const data = {
+    familiar: {
+      derecho: "Derecho Familiar",
+      abogado: "Ramiro Mateo",
+      telefono: "+54 11 4743-8758",
+      palabrasClave: [
+        "Sucesiones",
+        "Conflictos familiares",
+        "Cuota alimentaria",
+      ],
+    },
+  };
 
   function WhatsappLink({ phoneNumber, message }) {
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -35,7 +46,7 @@ function Abogados() {
     >
       <div className={styles.sectionContainer}>
         <h1 className={styles.title}>
-          {derecho} - Abogado {nombreAbogado}
+          {data[derecho].derecho} - Abogado {data[derecho].abogado}
         </h1>
         <div className={styles.derechoContainer}>
           <h2>¿Qué es {derecho}</h2>
@@ -75,7 +86,7 @@ function Abogados() {
           </div>
           <div className={styles.infoContacto}>
             <FaWhatsapp size={iconSize} />
-            <p>+54 9 11 3798-4208</p>
+            <p>{data[derecho].telefono}</p>
           </div>
           <div className={styles.infoContacto}>
             <IoLogoInstagram size={iconSize} />
@@ -108,4 +119,4 @@ function Abogados() {
   );
 }
 
-export default Abogados;
+export default Derechos;

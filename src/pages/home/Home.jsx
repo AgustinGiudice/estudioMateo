@@ -32,6 +32,7 @@ function Home() {
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             Comunicación con los hijos - Divorcio"
               abogado="Ramiro Mateo"
+              link="familiar"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
@@ -40,6 +41,7 @@ function Home() {
             
           Comunicación con los hijos - Divorcio"
               abogado="Ramiro Mateo"
+              link="familiar"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
@@ -47,13 +49,15 @@ function Home() {
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
             Comunicación con los hijos - Divorcio"
               abogado="Ramiro Mateo"
+              link="familiar"
               numero="+54 11 4743-8758"
             />
             <TarjetaPractica
               area="Derecho Familiar"
               contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
-            Comunicación con los hijos - Divorcio"
+              Comunicación con los hijos - Divorcio"
               abogado="Ramiro Mateo"
+              link="familiar"
               numero="+54 11 4743-8758"
             />
           </div>
@@ -124,10 +128,10 @@ function Home() {
       ) : (
         <div
           style={{
-            position: 'fixed',
-            bottom: '10vh',
-            right: '2rem',
-            cursor: 'pointer',
+            position: "fixed",
+            bottom: "10vh",
+            right: "2rem",
+            cursor: "pointer",
           }}
           onClick={handleChatBotToggle}
         >
