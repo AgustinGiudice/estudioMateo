@@ -174,6 +174,8 @@ function Derechos() {
               href={`https://wa.me/${data[derecho].telefono.replace(
                 /\D/g,
                 ""
+              )}?text=${encodeURIComponent(
+                `Hola, queria contactarme con ${data[derecho].abogado} por una consulta referida a  ${data[derecho].derecho}`
               )}`}
               className={styles.link}
               target="_blank"
