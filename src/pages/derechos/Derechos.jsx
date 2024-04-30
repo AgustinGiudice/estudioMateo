@@ -115,13 +115,13 @@ function Derechos() {
     const cleanedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
     const whatsappLink = `https://wa.me/${cleanedPhoneNumber}?text=${encodeURIComponent(
-      message
+      `Hola, queria contactarme con ${data[derecho].abogado} por una consulta referida a  ${data[derecho].derecho}`
     )}`;
 
     return (
-      <a href={whatsappLink} target="_blank" className={styles.button}>
+      <Link to={whatsappLink} target="_blank" className={styles.button}>
         Contactar
-      </a>
+      </Link>
     );
   }
 
