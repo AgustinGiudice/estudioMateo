@@ -2,6 +2,7 @@ import TarjetaPractica from "../../components/tarjetaPractica/TarjetaPractica";
 import styles from "./home.module.css";
 import { VscMail } from "react-icons/vsc";
 import { FaWhatsapp } from "react-icons/fa";
+import { BsTelephone } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
@@ -13,7 +14,7 @@ function Home() {
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
   const iconSize = 33;
   const headerHeight = 100;
-
+  const numero = " +54 9 11 3798-4208";
   // Función para manejar la apertura del ChatBot
   const handleChatBotToggle = () => setIsChatBotOpen(!isChatBotOpen);
 
@@ -28,37 +29,34 @@ function Home() {
           <h2 className={styles.tituloseccion}>Áreas de práctica</h2>
           <div className={styles.containertarjetas}>
             <TarjetaPractica
-              area="Derecho Familiar"
-              contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
-            Comunicación con los hijos - Divorcio"
+              area="Derecho del Trabajo"
+              contenido="Despidos - Accidentes de trabajo - Enfermedades profesionales - Comisiones médicas - Empleo público provincial y municipal - Juicio."
+              abogado="Dra. Sara Adriana Nasiff"
+              link="trabajo"
+              numero="+54 11 6828-5284"
+            />
+
+            <TarjetaPractica
+              area="Derecho de la Familia"
+              contenido=" Alimentos - divorcios - Regimen de comunicación - Plan de parentalidad - Uniones convivenciales - Separaciones - Manutención - Acuerdos."
+              abogado="Dr. Ramiro Manuel Mateo"
+              link="familia"
+              numero="+54 11 3798-4208"
+            />
+
+            <TarjetaPractica
+              area="Derecho Patrimonial"
+              contenido="Sucesiones - Condominio - Contrato - Alquiler - Locación - Pagos - Fideicomiso - Daños y perjuicios - Juicios - Asesoramiento - Patrimonio."
               abogado="Ramiro Mateo"
-              link="familiar"
-              numero="+54 11 4743-8758"
+              link="patrimonial"
+              numero="+54 11 3920-8797"
             />
             <TarjetaPractica
-              area="Derecho Familiar"
-              contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
-            
-          Comunicación con los hijos - Divorcio"
-              abogado="Ramiro Mateo"
-              link="familiar"
-              numero="+54 11 4743-8758"
-            />
-            <TarjetaPractica
-              area="Derecho Familiar"
-              contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
-            Comunicación con los hijos - Divorcio"
-              abogado="Ramiro Mateo"
-              link="familiar"
-              numero="+54 11 4743-8758"
-            />
-            <TarjetaPractica
-              area="Derecho Familiar"
-              contenido="Sucesiones - Conflictos familiares -Cuota -alimentaria -
-              Comunicación con los hijos - Divorcio"
-              abogado="Ramiro Mateo"
-              link="familiar"
-              numero="+54 11 4743-8758"
+              area="Derecho Comercial"
+              contenido="Juicio ejecutivo - Cheque - Pagaré - Start up - Empresa - Sociedad - Acciones - Contratos - Banco - Compañía de seguros - Estatuto - Trámites - Inscripciones - Sociedades"
+              abogado="Dra. Martina Inés Mateo"
+              link="comercial"
+              numero="+54 11 6828-5284"
             />
           </div>
         </div>
@@ -70,20 +68,49 @@ function Home() {
                 <p>Aguardamos tu consulta</p>
               </div>
               <div className={styles.infoContacto}>
-                <IoCompassOutline size={iconSize} />
-                <p>Avenida Centenario 725</p>
+                <a
+                  href="https://www.google.com/maps/place/Av.+Centenario+725,+B1642CAI+San+Isidro,+Provincia+de+Buenos+Aires/@-34.4684266,-58.5202815,17z/data=!4m6!3m5!1s0x95bcb03049344a2d:0x7606b740fbe0d7c!8m2!3d-34.468431!4d-58.5177066!16s%2Fg%2F11s9kjy22j?entry=ttu"
+                  target="_blank"
+                  className={styles.link}
+                >
+                  <IoCompassOutline size={iconSize} />
+                  <p>Av. Centenario 725, San Isidro</p>
+                </a>
               </div>
               <div className={styles.infoContacto}>
-                <VscMail size={iconSize} />
-                <p>consultas@ramiromateo.com</p>
+                <a
+                  href={`mailto:ramiromateo@estudiomateo.com.ar`}
+                  className={styles.link}
+                >
+                  <VscMail size={iconSize} />
+                  <p>consultas@ramiromateo.com</p>
+                </a>
               </div>
               <div className={styles.infoContacto}>
-                <FaWhatsapp size={iconSize} />
-                <p>+54 9 11 3798-4208</p>
+                <a
+                  href={`https://wa.me/${numero.replace(/\D/g, "")}`}
+                  className={styles.link}
+                  target="_blank"
+                >
+                  <FaWhatsapp size={iconSize} />
+                  <p>{numero}</p>
+                </a>
               </div>
               <div className={styles.infoContacto}>
-                <IoLogoInstagram size={iconSize} />
-                <p>@estudiojuridicomateo</p>
+                <a href="tel:+541148729354" className={styles.link}>
+                  <BsTelephone size={iconSize} />
+                  <p>4872-9354</p>
+                </a>
+              </div>
+              <div className={styles.infoContacto}>
+                <a
+                  href="https://www.instagram.com/estudiojuridicomateo/"
+                  target="_blank"
+                  className={styles.link}
+                >
+                  <IoLogoInstagram size={iconSize} />
+                  @estudiojuridicomateo
+                </a>
               </div>
             </div>
             <div className={styles.mapa}>

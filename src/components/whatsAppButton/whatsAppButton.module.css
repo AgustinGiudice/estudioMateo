@@ -1,4 +1,4 @@
-.whatsapp-button {
+.whatsappButton {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -14,11 +14,11 @@
 }
 
 .whatsapp-button:hover,
-.whatsapp-button.hovered {
+.hovered {
   background-color: darkgreen;
 }
 
-.whatsapp-icon {
+.whatsappIcon {
   color: white;
   font-size: 42px;
 }
@@ -34,11 +34,11 @@
   border-radius: 4px;
   font-size: 14px;
   opacity: 0;
-  width: 9rem;
+  width: 10rem;
   transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out; /* Cambio realizado aquí */
 }
 
-.whatsapp-button.hovered .tooltip.show {
+.show {
   opacity: 1;
   right: 60px; /* Cambio realizado aquí */
 }

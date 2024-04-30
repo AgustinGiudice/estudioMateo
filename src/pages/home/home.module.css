@@ -76,6 +76,13 @@
   gap: 1rem;
 }
 
+.link {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--negro);
+}
+
 .mapa {
   border: 2px solid var(--rojo);
   border-radius: 10px;

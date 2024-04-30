@@ -16,7 +16,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/derecho/:derecho" element={<Derechos />} />
+          <Route path="/derechos/:derecho" element={<Derechos />} />
         </Routes>
         <Footer />
       </main>

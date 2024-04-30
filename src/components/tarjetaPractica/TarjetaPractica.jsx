@@ -17,7 +17,7 @@ function TarjetaPractica({ area, contenido, abogado, numero, link }) {
           </div>
 
           <div>
-            <p className={styles.nombre}>Abogado {abogado}</p>
+            <p className={styles.nombre}> {abogado}</p>
             <p> {numero}</p>
           </div>
 
