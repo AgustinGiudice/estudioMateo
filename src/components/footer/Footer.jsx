@@ -19,16 +19,16 @@ export function Footer() {
           <nav>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="/">Derecho Laboral</a>
+                <a href="/derechos/trabajo">Derecho de Trabajo</a>
               </li>
               <li className={styles.navItem}>
-                <a href="/">Derecho Civil</a>
+                <a href="/derechos/familia">Derecho Familiar</a>
               </li>
               <li className={styles.navItem}>
-                <a href="/">Derecho Comercial</a>
+                <a href="/derechos/patrimonial">Derecho Patrimonial</a>
               </li>
               <li className={styles.navItem}>
-                <a href="/">Derecho Familiar</a>
+                <a href="/derechos/comercial">Derecho Comercial</a>
               </li>
             </ul>
           </nav>
@@ -38,7 +38,13 @@ export function Footer() {
             <h4 className={styles.title}>Redes</h4>
           </div>
           <div>
-            <IoLogoInstagram size={33} color="white" />
+            <a
+              href="https://www.instagram.com/estudiojuridicomateo/"
+              target="_blank"
+              className={styles.link}
+            >
+              <IoLogoInstagram size={33} color="white" />
+            </a>
           </div>
         </div>
       </div>

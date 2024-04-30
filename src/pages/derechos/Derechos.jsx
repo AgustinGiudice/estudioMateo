@@ -38,7 +38,7 @@ function Derechos() {
       ],
     },
     familia: {
-      derecho: "Derecho Familiar",
+      derecho: "Derecho familiar",
       abogado: "Dr. Ramiro Manuel Mateo",
       telefono: "+54 11 3798-4208",
       palabrasClave: [
@@ -61,7 +61,7 @@ function Derechos() {
       ],
     },
     patrimonial: {
-      derecho: "Derecho Familiar",
+      derecho: "Derecho patrimonial",
       abogado: "Dr. Roberto Gabriel Mateo",
       telefono: "+54 11 3920-8797",
       palabrasClave: [
@@ -86,7 +86,7 @@ function Derechos() {
       ],
     },
     comercial: {
-      derecho: "Derecho Familiar",
+      derecho: "Derecho comercial",
       abogado: "Dr. Ramiro Manuel Mateo",
       telefono: "+54 11 6828-5284",
       palabrasClave: [

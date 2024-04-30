@@ -19,9 +19,9 @@ export function Navbar() {
         />
         <div className={styles.navContainer}>
           <nav className={styles.enlaces}>
-            <a href="#areas">Áreas De Práctica</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#nosotros">Nosotros</a>
+            <a href="/#areas">Áreas De Práctica</a>
+            <a href="/#contacto">Contacto</a>
+            <a href="/#nosotros">Nosotros</a>
           </nav>
           <div className={styles.menuIcon} onClick={toggleMenu}>
             <div
