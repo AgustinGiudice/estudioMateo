@@ -21,6 +21,7 @@
   font-family: "cairo";
   margin-bottom: 2rem;
   text-align: center;
+  margin: 1rem 0;
 }
 @media (max-width: 1250px) {
   .containerHome {
@@ -43,13 +44,15 @@
 /* CONTACTO */
 
 .contactoContainer {
-  background-color: var(--blanco);
+  /* background-color: var(--blanco); */
   width: 100%;
+}
+.containerCards {
+  background-color: var(--blanco);
   padding: 2rem 6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-
 .cardContacto {
   display: flex;
   gap: 2rem;
