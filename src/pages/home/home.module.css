@@ -49,7 +49,7 @@
 }
 .containerCards {
   background-color: var(--blanco);
-  padding: 2rem 6rem;
+  padding: 2rem 3rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -72,12 +72,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  width: 40%;
 }
 
-.cardContacto div p:first-child {
+.cardContacto h3 {
   color: var(--rojo);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .infoContacto {
@@ -92,6 +93,10 @@
   text-decoration: none;
   color: var(--negro);
 }
+.link:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
 
 .mapa {
   border: 2px solid var(--rojo);
@@ -104,9 +109,19 @@
   width: 100%;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 980px) {
   .cardContacto {
     flex-direction: column;
+  }
+  .espaciado {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .espaciado h3 {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 780px) {

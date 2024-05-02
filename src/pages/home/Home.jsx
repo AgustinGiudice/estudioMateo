@@ -66,9 +66,8 @@ function Home() {
           <div className={styles.containerCards}>
             <div className={styles.cardContacto}>
               <div className={styles.espaciado}>
-                <div>
-                  <p>Aguardamos tu consulta</p>
-                </div>
+                <h3>Aguardamos tu consulta</h3>
+
                 <div className={styles.infoContacto}>
                   <a
                     href="https://www.google.com/maps/place/Av.+Centenario+725,+B1642CAI+San+Isidro,+Provincia+de+Buenos+Aires/@-34.4684266,-58.5202815,17z/data=!4m6!3m5!1s0x95bcb03049344a2d:0x7606b740fbe0d7c!8m2!3d-34.468431!4d-58.5177066!16s%2Fg%2F11s9kjy22j?entry=ttu"
