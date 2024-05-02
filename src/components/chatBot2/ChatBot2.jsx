@@ -87,6 +87,8 @@ const vocesClaves = [
     "médico",
     "médica",
     "médica",
+    "derecho",
+    "derechos",
   ],
   [
     "alimentos",
@@ -98,6 +100,8 @@ const vocesClaves = [
     "comunicación",
     "comunicacion",
     "parentalidad",
+    "paternidad",
+    "maternidad",
     "papá",
     "padre",
     "papa",
@@ -214,6 +218,11 @@ const vocesClaves = [
     "autoridades",
     "organismo",
     "organismos",
+    "obligaciones",
+    "responsabilidades",
+    "obligacion",
+    "obligación",
+    "responsabilidad",
   ],
 ];
 
