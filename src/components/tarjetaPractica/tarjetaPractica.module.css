@@ -12,6 +12,8 @@
   height: 3rem;
   align-items: center;
   border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .tarjetaPracticaContainer div h2 {
