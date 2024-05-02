@@ -3,6 +3,7 @@ import "./ChatBot2.css"; // Asegúrate de tener este archivo CSS en tu proyecto
 import bot from "../../assets/bot.png";
 import { useNavigate } from "react-router-dom";
 import { IoSend } from "react-icons/io5";
+import { FaRobot } from "react-icons/fa";
 
 const derechoData = [
   {
@@ -312,11 +313,7 @@ function ChatBot2() {
     <div className={`chat-bot ${chatOpen ? "open" : "closed"}`}>
       <div className="chat-header" onClick={() => setChatOpen(!chatOpen)}>
         <h3>Bot Estudio Mateo</h3>
-        <img
-          src={bot}
-          alt="Bot"
-          className={`bot-icon ${chatOpen ? "" : "bot-closed"}`}
-        />
+        <FaRobot size={33} />
       </div>
       <div className="messages">
         {messages.map((msg, index) => (
