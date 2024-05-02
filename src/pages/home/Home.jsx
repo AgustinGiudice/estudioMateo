@@ -25,6 +25,7 @@ function Home() {
         style={{ paddingTop: headerHeight }}
         id="areas"
       >
+        <h1 style={{ display: "none" }}>Estudio jurídico Mateo</h1>
         <div>
           <h2 className={styles.tituloseccion}>Áreas de práctica</h2>
           <div className={styles.containertarjetas}>
@@ -128,7 +129,7 @@ function Home() {
           </div>
         </section>
         <section className={styles.nosotrosContainer} id="nosotros">
-          <h3 className={styles.tituloseccion}>Sobre Nosotros</h3>
+          <h2 className={styles.tituloseccion}>Sobre Nosotros</h2>
           <div className={styles.nosotrosSubContainer}>
             <img
               src={imgNosotros}

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./ChatBot2.css"; // Asegúrate de tener este archivo CSS en tu proyecto
 import bot from "../../assets/bot.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { IoSend } from "react-icons/io5";
 
 const derechoData = [
   {
@@ -41,8 +42,208 @@ const derechoData = [
   },
 ];
 
+const vocesClaves = [
+  [
+    "despidos",
+    "despido",
+    "accidente",
+    "accidentes",
+    "trabajo",
+    "laboral",
+    "laborales",
+    "empleo",
+    "empleos",
+    "empleado",
+    "empleada",
+    "empleador",
+    "empleadores",
+    "empleadora",
+    "jefe",
+    "jefes",
+    "jefa",
+    "jefas",
+    "supervisor",
+    "supervisora",
+    "supervisores",
+    "juicio",
+    "juicios",
+    "público",
+    "públicos",
+    "publico",
+    "publicos",
+    "municipal",
+    "municipales",
+    "estatal",
+    "estatales",
+    "sueldo",
+    "sueldos",
+    "enfermedad",
+    "enfermo",
+    "enfermedades",
+    "lesiones",
+    "art",
+    "medico",
+    "médico",
+    "médica",
+    "médica",
+  ],
+  [
+    "alimentos",
+    "alimento",
+    "alimentaria",
+    "cuota",
+    "divorcio",
+    "divorcios",
+    "comunicación",
+    "comunicacion",
+    "parentalidad",
+    "papá",
+    "padre",
+    "papa",
+    "mama",
+    "madre",
+    "mamá",
+    "separación",
+    "separacion",
+    "acuerdo",
+    "acuerdos",
+    "convivencia",
+    "hijo",
+    "hijos",
+    "hija",
+    "hijas",
+    "visitas",
+    "visita",
+    "alimentarias",
+    "manutención",
+    "manutencion",
+    "division",
+    "división",
+    "bienes",
+    "conflicto",
+    "conflictos",
+    "familia",
+    "familiar",
+  ],
+  [
+    "sucesiones",
+    "suceciones",
+    "susesiones",
+    "suseción",
+    "susesion",
+    "suceción",
+    "sucecion",
+    "sucesión",
+    "sucesion",
+    "condominio",
+    "alquiler",
+    "alquileres",
+    "locación",
+    "locasión",
+    "locacion",
+    "locasion",
+    "locaciones",
+    "locasiones",
+    "pagos",
+    "pago",
+    "fideicomisos",
+    "fideicomiso",
+    "daños",
+    "daño",
+    "perjuicios",
+    "perjuicio",
+    "juicios",
+    "juicios",
+    "asesoramiento",
+    "asesoramientos",
+    "patrimonio",
+    "patrimonios",
+    "contratos",
+    "contrato",
+  ],
+  [
+    "ejecutivo",
+    "ejecutivos",
+    "cheque",
+    "cheques",
+    "chequera",
+    "chequeras",
+    "pagaré",
+    "pagarés",
+    "pagare",
+    "pagares",
+    "start up",
+    "start ups",
+    "startups",
+    "startup",
+    "empresa",
+    "empresas",
+    "sociedad",
+    "sociedades",
+    "acciones",
+    "acción",
+    "contrato",
+    "contratos",
+    "bancos",
+    "banco",
+    "seguro",
+    "seguros",
+    "compañia",
+    "compañias",
+    "companias",
+    "compania",
+    "estatutos",
+    "estatuto",
+    "trámite",
+    "trámites",
+    "tramite",
+    "tramites",
+    "inscripción",
+    "inscripcion",
+    "inscripciones",
+    "bancarias",
+    "bancaria",
+    "bancario",
+    "bancarios",
+    "entidades",
+    "entidad",
+    "designación",
+    "designacion",
+    "autoridad",
+    "autoridades",
+    "organismo",
+    "organismos",
+  ],
+];
+
+function obtenerIndiceCoincidencias(userMessage) {
+  const palabrasUsuario = userMessage.toLowerCase().split(/[ ,.]+/);
+  let maxCoincidencias = 0;
+  let indiceMaxCoincidencias = -1;
+
+  for (let i = 0; i < vocesClaves.length; i++) {
+    const palabrasClave = vocesClaves[i];
+    let coincidencias = 0;
+
+    palabrasUsuario.forEach((palabraUsuario) => {
+      if (palabrasClave.includes(palabraUsuario)) {
+        coincidencias++;
+      }
+    });
+
+    if (coincidencias > maxCoincidencias) {
+      maxCoincidencias = coincidencias;
+      indiceMaxCoincidencias = i;
+    }
+  }
+
+  return indiceMaxCoincidencias;
+}
+
 function ChatBot2() {
+  const navigate = useNavigate();
   const [chatOpen, setChatOpen] = useState(true);
+  const [userMessage, setUserMessage] = useState();
   const [messages, setMessages] = useState([
     {
       text: "¡Hola! ¿En qué área de derecho estás interesado?",
@@ -63,7 +264,7 @@ function ChatBot2() {
   const selectOption = (index) => {
     const selectedArea = derechoData[index];
     // Simula que el usuario envía un mensaje con su selección antes de recibir la respuesta del bot
-    sendMessage(`Seleccionaste ${selectedArea.area}`, "user");
+    sendMessage(`Seleccionaste ${selectedArea.area}`, "bot");
     const respuestaBot = `Nuestro especialista en ${selectedArea.area} es el/la ${selectedArea.abogado}. Puede ponerse en contacto llamando al ${selectedArea.numero}`;
     // Añadir la respuesta del bot primero
     setTimeout(() => {
@@ -74,12 +275,8 @@ function ChatBot2() {
   };
   const addVerMasButton = (link) => {
     const verMasButton = {
-      text: (
-        <Link className="linkChat" to={`/derechos/${link}`}>
-          Click Aqui
-        </Link>
-      ),
-      action: () => console.log(link),
+      text: <p className="linkChat">Click Aqui</p>,
+      action: () => navigate(`/derechos/${link}`),
     };
     setMessages((prevMessages) => [
       ...prevMessages,
@@ -90,10 +287,31 @@ function ChatBot2() {
       },
     ]);
   };
+
+  const handleResponse = () => {
+    const index = obtenerIndiceCoincidencias(userMessage);
+    if (index === -1) {
+      return sendMessage(
+        "Estoy acá para ayudarte. Escribime cual es tu consulta.",
+        "bot"
+      );
+    }
+    const selectedArea = derechoData[index];
+
+    const respuestaBot1 = `Por lo que me contás, creo que necesitas asesoramiento en ${selectedArea.area}.`;
+    const respuestaBot2 = `Nuestro especialista en ${selectedArea.area} es el/la ${selectedArea.abogado}. Puede ponerse en contacto llamando o mandando un mensaje de Whatsapp al ${selectedArea.numero}`;
+
+    setTimeout(() => {
+      sendMessage(`${respuestaBot1}`, "bot");
+      sendMessage(`${respuestaBot2}`, "bot");
+      // Luego añadir el botón "Ver Más"
+      setTimeout(addVerMasButton(selectedArea.link), 100);
+    }, 500);
+  };
   return (
     <div className={`chat-bot ${chatOpen ? "open" : "closed"}`}>
       <div className="chat-header" onClick={() => setChatOpen(!chatOpen)}>
-        <span>Bot Estudio Mateo</span>
+        <h3>Bot Estudio Mateo</h3>
         <img
           src={bot}
           alt="Bot"
@@ -107,7 +325,6 @@ function ChatBot2() {
             {msg.options &&
               msg.options.map((option, i) => (
                 <>
-                  <br key={`br-${i}`} />
                   <button
                     key={i}
                     onClick={option.action}
@@ -121,12 +338,22 @@ function ChatBot2() {
         ))}
       </div>
       {chatOpen && (
-        <form className="message-form" onSubmit={(e) => e.preventDefault()}>
+        <form className="message-form">
           <input
             type="text"
             name="message"
             placeholder="Escribe tu mensaje aquí..."
-            disabled
+            value={userMessage}
+            onChange={(e) => setUserMessage(e.target.value)}
+          />
+          <IoSend
+            size={25}
+            className="message-form-send-button"
+            onClick={() => {
+              sendMessage(userMessage, "user");
+              handleResponse();
+              setUserMessage("");
+            }}
           />
         </form>
       )}
