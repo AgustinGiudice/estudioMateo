@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import styles from "./tarjetaPractica.module.css";
 
-function TarjetaPractica({ area, contenido, abogado, numero, link }) {
+function TarjetaPractica({
+  area,
+  contenido,
+  contenido2,
+  abogado,
+  numero,
+  link,
+}) {
+  const partes = contenido.split(/(\*\*.*?\*\*)/);
+  const partes2 = contenido2.split(/(\*\*.*?\*\*)/);
+
   return (
     <>
       <div className={styles.tarjetaPracticaContainer}>
@@ -10,7 +20,26 @@ function TarjetaPractica({ area, contenido, abogado, numero, link }) {
         </div>
         <div className={styles.contenidoContainer}>
           <div>
-            <p>{contenido}</p>
+            <p className={styles.contenido}>
+              {partes.map((parte, index) => {
+                if (parte.startsWith("**") && parte.endsWith("**")) {
+                  // Si la parte está entre **, se muestra en negrita
+                  return <strong key={index}>{parte.slice(2, -2)}</strong>;
+                } else {
+                  return parte;
+                }
+              })}
+            </p>
+            <p className={styles.contenido}>
+              {partes2.map((parte, index) => {
+                if (parte.startsWith("**") && parte.endsWith("**")) {
+                  // Si la parte está entre **, se muestra en negrita
+                  return <strong key={index}>{parte.slice(2, -2)}</strong>;
+                } else {
+                  return parte;
+                }
+              })}
+            </p>
           </div>
           <div className={styles.centrar}>
             <hr className={styles.lineaHorizontal} />

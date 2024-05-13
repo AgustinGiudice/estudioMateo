@@ -83,10 +83,13 @@
 }
 
 .infoContacto {
+}
+
+.infoContacto p {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  background-color: red;
 }
 
 .link {
@@ -97,7 +100,6 @@
 }
 .link:hover {
   text-decoration: underline;
-  font-weight: 600;
 }
 
 .mapa {
