@@ -4,7 +4,6 @@
   right: 20px;
   width: 300px;
   height: 400px;
-  border: 1px solid #ccc;
   border-radius: 10px 10px 0 0;
   z-index: 60;
 
@@ -26,6 +25,7 @@
 .chat-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--rojo);
   color: #ffffff;
   padding: 0.5em;
