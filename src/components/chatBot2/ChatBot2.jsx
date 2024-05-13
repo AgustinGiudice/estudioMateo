@@ -259,7 +259,7 @@ function ChatBot2() {
       text: "¡Hola! ¿En qué área de derecho estás interesado?",
       options: [
         { text: "Derecho del Trabajo", action: () => selectOption(0) },
-        { text: "Derecho de la Familia", action: () => selectOption(1) },
+        { text: "Derecho de Familia", action: () => selectOption(1) },
         { text: "Derecho Patrimonial", action: () => selectOption(2) },
         { text: "Derecho Comercial", action: () => selectOption(3) },
       ],
