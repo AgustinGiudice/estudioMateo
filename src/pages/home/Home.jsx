@@ -183,6 +183,7 @@ function Home() {
             bottom: "2vh",
             right: "2rem",
             cursor: "pointer",
+            zIndex: 66,
           }}
           onClick={handleChatBotToggle}
         >

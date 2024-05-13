@@ -3,6 +3,7 @@
   grid-template-columns: 40% 60%;
   width: 100%;
   background-color: var(--gris);
+  position: relative;
 }
 
 .blanco {
@@ -49,5 +50,18 @@
 }
 .navItem a {
   color: var(--blanco);
+  text-decoration: none;
+}
+
+.oasisWebs {
+  position: absolute;
+  color: white;
+  right: 25px;
+  bottom: 5px;
+  font-size: 0.9em;
+}
+.oasisWebs a {
+  font-weight: bold;
+  color: aqua;
   text-decoration: none;
 }

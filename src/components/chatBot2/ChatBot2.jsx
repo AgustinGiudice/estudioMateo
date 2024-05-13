@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ChatBot2.css"; // Asegúrate de tener este archivo CSS en tu proyecto
-import bot from "../../assets/bot.png";
 import { useNavigate } from "react-router-dom";
 import { IoSend } from "react-icons/io5";
 import { FaRobot } from "react-icons/fa";

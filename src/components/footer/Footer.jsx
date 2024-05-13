@@ -48,6 +48,9 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <div className={styles.oasisWebs}>
+        Powered by <a href="https://www.oasiswebs.tech">OasisWebs</a>
+      </div>
     </footer>
   );
 }
