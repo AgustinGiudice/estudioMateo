@@ -47,6 +47,12 @@
   gap: 0.5em;
 }
 
+.infoContacto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sectionContainer.centerSection::after,
 .sectionContainer.centerSection::before {
   content: "";
