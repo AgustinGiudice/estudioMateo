@@ -158,35 +158,40 @@
   display: flex;
   flex-direction: row;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: var(--blanco);
+  padding: 1em;
   /*gap: 1rem;*/
 }
 .imgNosotros {
-  width: 40vw;
+  width: 100%;
+  object-fit: contain;
   border-top-left-radius: 0.5em;
   border-bottom-left-radius: 0.5em;
 }
 
 .textoNosotros {
-  width: 40vw;
-  background-color: var(--blanco);
+  max-width: 50%;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  padding: 1em;
 }
 
 @media (max-width: 1250px) {
   .nosotrosSubContainer {
     flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
   }
   .imgNosotros {
-    width: 100vw;
-
+    width: 100%;
+    padding: 2em;
     border-bottom-left-radius: 0em;
     border-top-right-radius: 0.5em;
   }
 
   .textoNosotros {
-    width: 95vw;
+    max-width: none;
+    width: 100%;
     border-top-right-radius: 0em;
     border-top-left-radius: 0em;
     border-bottom-right-radius: 0.5em;
@@ -199,14 +204,14 @@
     flex-direction: column;
   }
   .imgNosotros {
-    width: 100vw;
+    width: 100%;
 
     border-bottom-left-radius: 0em;
     border-top-right-radius: 0.5em;
   }
 
   .textoNosotros {
-    width: 95vw;
+    width: 100%;
     border-top-right-radius: 0em;
     border-top-left-radius: 0em;
     border-bottom-right-radius: 0.5em;
