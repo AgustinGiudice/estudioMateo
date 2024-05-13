@@ -6,9 +6,10 @@ import { BsTelephone } from "react-icons/bs";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoCompassOutline } from "react-icons/io5";
 import ChatBot2 from "../../components/chatBot2/ChatBot2";
-import { BsChatDots } from "react-icons/bs"; // Asumiendo que quieres usar este icono para el chat
+import { BsChatDots } from "react-icons/bs"; //icono chat
 import { useState } from "react";
-import imgNosotros from "../../assets/nosotros.jpg";
+// import imgNosotros from "../../assets/nosotros.jpg";
+import imgNosotros from "../../assets/logo.png";
 
 function Home() {
   const [isChatBotOpen, setIsChatBotOpen] = useState(false);
@@ -138,14 +139,31 @@ function Home() {
 
             <div className={styles.textoNosotros}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum nostrum asperiores molestias, quos labore repellendus
-                vel velit ratione modi, quia quas esse magnam facere soluta ipsa
-                accusantium! Laboriosam, numquam quia. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Reiciendis velit nisi dicta
-                natus quibusdam quos vero quod. Minima iste officiis libero esse
-                laudantium, molestiae cum tenetur, dolorem temporibus
-                repellendus eos?
+                Fundado en 1955, el Estudio Jurídico Mateo se ha consolidado
+                como una institución comprometida con la excelencia en la
+                prestación de servicios legales. Nuestro compromiso se
+                fundamenta en la eficiencia profesional, la calidad en el trato
+                y la responsabilidad en la gestión de los asuntos encomendados
+                por nuestros clientes. <br /> Nuestra firma está integrada por
+                un equipo altamente capacitado, conformado por cuatro socios,
+                asociados y colaboradores, todos ellos comprometidos con los más
+                altos estándares éticos y profesionales.
+                <br /> En el Estudio Jurídico Mateo, ofrecemos soluciones
+                legales integrales en diversas áreas del derecho. Nuestro
+                enfoque se caracteriza por la atención personalizada y la
+                búsqueda constante de la mejor estrategia legal para cada caso.
+                <br />
+                Nos destacamos por nuestra capacidad para prevenir, gestionar y
+                resolver conflictos legales de manera eficaz y eficiente,
+                siempre velando por los intereses de nuestros clientes y
+                cumpliendo con las normas legales vigentes.
+                <br />{" "}
+                <b>
+                  Si busca asesoramiento jurídico de calidad, no dude en
+                  contactar al Estudio Jurídico Mateo. Estamos comprometidos con
+                  su satisfacción y en brindarle soluciones legales efectivas y
+                  confiables.
+                </b>
               </p>
             </div>
           </div>

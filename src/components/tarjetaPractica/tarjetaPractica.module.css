@@ -18,9 +18,8 @@
 
 .tarjetaPracticaContainer div h2 {
   margin: 0;
-  font-family: "Eczar", serif;
   color: var(--blanco);
-  font-weight: 100;
+  font-weight: 500;
 }
 .lineaHorizontal {
   border: none;
@@ -53,7 +52,9 @@
   margin-top: 2rem;
   color: var(--blanco);
   text-decoration: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centrar {

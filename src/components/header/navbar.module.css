@@ -13,7 +13,7 @@
 }
 @media (width <1440px) {
   .headerContainer {
-    padding: 0.5rem 10em;
+    padding: 0.5rem 8em;
   }
 }
 @media (width <=1256px) {
@@ -41,8 +41,6 @@ img {
 .enlaces a {
   text-decoration: none;
   color: var(--negro);
-  font-family: "Cairo";
-  font-weight: 600;
 }
 
 .enlaces a:hover {
