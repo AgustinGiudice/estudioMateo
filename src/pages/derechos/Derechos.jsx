@@ -20,6 +20,7 @@ function Derechos() {
       derecho: "Derecho del trabajo",
       abogado: "Dra. Sara Adriana Nasiff",
       telefono: "+54 11 6828-5284",
+      email: "contacto@estudiojuridicomateo.com.ar",
       palabrasClave: [
         "despidos",
         "accidentes de trabajo",
@@ -38,6 +39,7 @@ function Derechos() {
       derecho: "Derecho de Familia",
       abogado: "Dr. Ramiro Manuel Mateo",
       telefono: "+54 11 3798-4208",
+      email: "ramiromateo@estudiojuridicomateo.com.ar",
       palabrasClave: [
         "alimentos",
         "divorcios",
@@ -58,6 +60,7 @@ function Derechos() {
       derecho: "Derecho Patrimonial",
       abogado: "Dr. Roberto Gabriel Mateo",
       telefono: "+54 11 3920-8797",
+      email: "gabrielmateo@estudiojuridicomateo.com.ar",
       palabrasClave: [
         "alimentos",
         "divorcios",
@@ -80,6 +83,7 @@ function Derechos() {
       derecho: "Derecho Comercial",
       abogado: "Dra. Martina Ines Mateo",
       telefono: "+54 11 6828-5284",
+      email: "martinamateo@estudiojuridicomateo.com.ar",
       palabrasClave: [
         "alimentos",
         "divorcios",
@@ -120,7 +124,7 @@ function Derechos() {
     >
       <WhatsAppButton numeroTelefono={data[derecho].telefono} />
       <div className={styles.sectionContainer}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title + " " + styles.nombre}>
           {data[derecho].derecho} - {data[derecho].abogado}
         </h1>
         <div className={styles.derechoContainer}>
@@ -147,7 +151,7 @@ function Derechos() {
               className={styles.link}
             >
               <VscMail size={iconSize} />
-              contacto@estudiomateo.com.ar
+              {data[derecho].email}
             </a>
           </div>
           <div className={styles.infoContacto}>
