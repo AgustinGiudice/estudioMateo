@@ -66,6 +66,10 @@
   justify-content: center;
   align-items: center;
 }
+.infoContacto a:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 .sectionContainer.centerSection::after,
 .sectionContainer.centerSection::before {

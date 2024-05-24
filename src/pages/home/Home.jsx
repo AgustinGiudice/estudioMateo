@@ -79,7 +79,7 @@ function Home() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <IoCompassOutline size={iconSize} />
+                    <IoCompassOutline color="#fff" size={iconSize} />
                     <p>Avenida Centenario 725 Piso 1 “B” San Isidro</p>
                   </a>
                 </div>
@@ -88,7 +88,7 @@ function Home() {
                     href={`mailto:ramiromateo@estudiomateo.com.ar`}
                     className={styles.link}
                   >
-                    <VscMail size={iconSize} />
+                    <VscMail color="#fff" size={iconSize} />
                     <p>consultas@ramiromateo.com</p>
                   </a>
                 </div>
@@ -98,13 +98,13 @@ function Home() {
                     className={styles.link}
                     target="_blank"
                   >
-                    <FaWhatsapp size={iconSize} />
+                    <FaWhatsapp color="#fff" size={iconSize} />
                     <p>{numero}</p>
                   </a>
                 </div>
                 <div className={styles.infoContacto}>
                   <a href="tel:+541148729354" className={styles.link}>
-                    <BsTelephone size={iconSize} />
+                    <BsTelephone color="#fff" size={iconSize} />
                     <p>4872-9354</p>
                   </a>
                 </div>
@@ -114,7 +114,7 @@ function Home() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <IoLogoInstagram size={iconSize} />
+                    <IoLogoInstagram color="#fff" size={iconSize} />
                     <p>@estudiojuridicomateo</p>
                   </a>
                 </div>
