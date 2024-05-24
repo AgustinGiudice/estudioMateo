@@ -74,6 +74,7 @@
   flex-direction: column;
   gap: 0.7rem;
   width: 40%;
+  /* background-color: var(--rojo); */
 }
 
 .cardContacto h3 {
@@ -172,6 +173,8 @@
   max-width: 50%;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1250px) {
