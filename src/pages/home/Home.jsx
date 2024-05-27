@@ -32,7 +32,7 @@ function Home() {
           <div className={styles.containertarjetas}>
             <TarjetaPractica
               area="Derecho del Trabajo"
-              contenido="El Estudio Jurídico lleva adelante temas en materia de ** despidos, accidentes de trabajo, enfermedades profesionales ** , empleo público provincial y municipal."
+              contenido="Asesoramos en materia de ** despidos, accidentes de trabajo, enfermedades profesionales ,empleo público provincial y municipal.** "
               contenido2="También realiza la tramitación de expedientes en sede administrativa (**Comisiones Médicas, Ministerio de Trabajo ** ) así como también  ** en sede judicial **  (Provincia de Buenos Aires y Capital Federal)."
               abogado="Dra. Sara Adriana Nasiff"
               link="trabajo"
@@ -41,8 +41,8 @@ function Home() {
 
             <TarjetaPractica
               area="Derecho de Familia"
-              contenido="El Estudio Jurídico lleva adelante todas aquellas cuestiones vinculadas a los conflictos de familia (**régimen de comunicación, divorcios, plan de parentalidad, alimentos**)."
-              contenido2="También interviene en ** divisiones de bienes**, uniones convivenciales y separaciones, así como en la confección de acuerdos prematrimoniales y de convivencia."
+              contenido="Intermediamos en los conflictos de familia (**régimen de comunicación, divorcios, plan de parentalidad, alimentos**)."
+              contenido2="También intervenimos en** divisiones de bienes**, uniones convivenciales y separaciones, así como en la confección de acuerdos prematrimoniales y de convivencia."
               abogado="Dr. Ramiro Manuel Mateo"
               link="familia"
               numero="+54 11 3798-4208"
@@ -50,15 +50,15 @@ function Home() {
 
             <TarjetaPractica
               area="Derecho Patrimonial"
-              contenido="El Estudio Jurídico lleva adelante todas aquellas cuestiones que involucran al patrimonio tanto de las personas físicas como jurídicas (**sucesiones, divisiones de condominio, constitución y disolución de fideicomisos, contratos en general y en particular de obra y de locación, acciones por daños y perjuicios contractuales y extracontractuales**)."
-              contenido2=" Gestionamos la representación judicial y extrajudicial en materia civil y comercial en la Provincia de Buenos Aires."
+              contenido="Gestionamos aquellas cuestiones que involucran al  patrimonio tanto de las personas físicas como jurídicas (**sucesiones, divisiones de condominio, constitución y disolución de fideicomisos, contratos en general y en particular de obra y de locación, acciones por daños y perjuicios contractuales y extracontractuales**)."
+              contenido2="Ejercemos la representación judicial y extrajudicial en materia civil y comercial en la Provincia de Buenos Aires"
               abogado="Dr. Roberto Gabriel Mateo"
               link="patrimonial"
               numero="+54 11 3920-8797"
             />
             <TarjetaPractica
               area="Derecho Comercial"
-              contenido="El Estudio Jurídico lleva adelante todas aquellas acciones vinculadas al **derecho comercial y constitución de sociedades y “StartUps”** (**redacción de estatutos, trámites ante organismos, inscripciones, designación de autoridades**), brindamos servicios de asesoramiento jurídico a **entidades Bancarias y Compañías de Seguros**."
+              contenido="Resolvemos aquellas cuestiones  vinculadas al **derecho comercial y constitución de sociedades y “StartUps”** (**redacción de estatutos, trámites ante organismos, inscripciones, designación de autoridades**), brindamos servicios de asesoramiento jurídico a **entidades Bancarias y Compañías de Seguros**."
               contenido2="Nos desempeñamos en sede judicial y extrajudicial en Provincia de Buenos Aires (**juicios ejecutivos, juicios por cobro de pesos, recuperos de créditos**)."
               abogado="Dra. Martina Inés Mateo"
               link="comercial"
@@ -79,7 +79,7 @@ function Home() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <IoCompassOutline size={iconSize} />
+                    <IoCompassOutline color="#fff" size={iconSize} />
                     <p>Avenida Centenario 725 Piso 1 “B” San Isidro</p>
                   </a>
                 </div>
@@ -88,7 +88,7 @@ function Home() {
                     href={`mailto:ramiromateo@estudiomateo.com.ar`}
                     className={styles.link}
                   >
-                    <VscMail size={iconSize} />
+                    <VscMail color="#fff" size={iconSize} />
                     <p>consultas@ramiromateo.com</p>
                   </a>
                 </div>
@@ -98,13 +98,13 @@ function Home() {
                     className={styles.link}
                     target="_blank"
                   >
-                    <FaWhatsapp size={iconSize} />
+                    <FaWhatsapp color="#fff" size={iconSize} />
                     <p>{numero}</p>
                   </a>
                 </div>
                 <div className={styles.infoContacto}>
                   <a href="tel:+541148729354" className={styles.link}>
-                    <BsTelephone size={iconSize} />
+                    <BsTelephone color="#fff" size={iconSize} />
                     <p>4872-9354</p>
                   </a>
                 </div>
@@ -114,7 +114,7 @@ function Home() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <IoLogoInstagram size={iconSize} />
+                    <IoLogoInstagram color="#fff" size={iconSize} />
                     <p>@estudiojuridicomateo</p>
                   </a>
                 </div>
@@ -145,22 +145,16 @@ function Home() {
               <p>
                 Fundado en 1955, el Estudio Jurídico Mateo se ha consolidado
                 como una institución comprometida con la excelencia en la
-                prestación de servicios legales. Nuestro compromiso se
-                fundamenta en la eficiencia profesional, la calidad en el trato
-                y la responsabilidad en la gestión de los asuntos encomendados
-                por nuestros clientes. <br /> Nuestra firma está integrada por
-                un equipo altamente capacitado, conformado por cuatro socios,
-                asociados y colaboradores, todos ellos comprometidos con los más
-                altos estándares éticos y profesionales.
-                <br /> En el Estudio Jurídico Mateo, ofrecemos soluciones
-                legales integrales en diversas áreas del derecho. Nuestro
-                enfoque se caracteriza por la atención personalizada y la
-                búsqueda constante de la mejor estrategia legal para cada caso.
+                prestación de servicios legales.
                 <br />
-                Nos destacamos por nuestra capacidad para prevenir, gestionar y
-                resolver conflictos legales de manera eficaz y eficiente,
-                siempre velando por los intereses de nuestros clientes y
-                cumpliendo con las normas legales vigentes.
+                Nuestro compromiso se fundamenta en la eficiencia profesional,
+                la calidad en el trato y la responsabilidad en la gestión de los
+                asuntos encomendados por nuestros clientes.
+                <br />
+                Nuestra firma está integrada por un equipo altamente capacitado,
+                conformado por cuatro socios, asociados y colaboradores, todos
+                ellos comprometidos con los más altos estándares éticos y
+                profesionales.
                 <br />{" "}
                 <b>
                   Si busca asesoramiento jurídico de calidad, no dude en

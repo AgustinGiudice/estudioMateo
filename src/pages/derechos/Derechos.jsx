@@ -142,7 +142,7 @@ function Derechos() {
               className={styles.link}
             >
               <IoCompassOutline size={iconSize} />
-              Av. Centenario 725, San Isidro
+              Avenida Centenario 725 Piso 1 “B” San Isidro
             </a>
           </div>
           <div className={styles.infoContacto}>

@@ -73,13 +73,18 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  width: 40%;
+  width: 50%;
+  background-color: var(--rojo);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .cardContacto h3 {
   color: var(--rojo);
   font-size: 1.4rem;
   font-weight: 700;
+  color: var(--blanco);
+  margin: 0rem 0rem 1rem 0rem;
 }
 
 .infoContacto p {
@@ -88,6 +93,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--blanco);
 }
 
 .link {
@@ -98,6 +104,7 @@
 }
 .link:hover {
   text-decoration: underline;
+  color: white;
 }
 
 .mapa {
@@ -172,6 +179,8 @@
   max-width: 50%;
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1250px) {
