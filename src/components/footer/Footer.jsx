@@ -19,10 +19,10 @@ export function Footer() {
           <nav>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="/derechos/trabajo">Derecho de Trabajo</a>
+                <a href="/derechos/trabajo">Derecho del Trabajo</a>
               </li>
               <li className={styles.navItem}>
-                <a href="/derechos/familia">Derecho Familiar</a>
+                <a href="/derechos/familia">Derecho de Familia</a>
               </li>
               <li className={styles.navItem}>
                 <a href="/derechos/patrimonial">Derecho Patrimonial</a>
