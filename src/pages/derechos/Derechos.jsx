@@ -91,7 +91,7 @@ function Derechos() {
         "plan de parentalidad",
       ],
       contenido1:
-        "El Estudio lleva adelante todas aquellas acciones vinculadas al derecho comercial y constitución de sociedades y “Start Ups” (redacción de estatutos, trámites ante organismos, inscripciones, designación de autoridades), brindamos servicios de asesoramiento jurídico a entidades Bancarias y Compañías de Seguros.",
+        "La Dra. Martina Ines Mateo es abogada egresada de la Pontificia Universidad Católica Argentina (UCA). Tomo 40 Folio 178 CASI. Tomo 103 Folio 389 CPACF. Es Mediadora del Ministerio de Justicia y Derechos Humanos de la Provincia de Buenos Aires (Matricula SI 266). Fue Consejera Suplente, Titular y Prosecretaria del Colegio de Abogados de San Isidro (2017 / 2022). EMBA en curso (Executive Master in Business Administration) en UDESA (Universidad de San Andrés) cohorte 2023 / 2024.",
       estudios: [
         "Abogada egresada de la Pontificia Universidad Católica Argentina (UCA).",
         "Tomo 40 Folio 178 CASI.",
@@ -146,10 +146,7 @@ function Derechos() {
             </a>
           </div>
           <div className={styles.infoContacto}>
-            <a
-              href={`mailto:ramiromateo@estudiomateo.com.ar`}
-              className={styles.link}
-            >
+            <a href={`mailto:${data[derecho].email}`} className={styles.link}>
               <VscMail size={iconSize} />
               {data[derecho].email}
             </a>
