@@ -272,7 +272,7 @@ function ChatBot2() {
   };
 
   const customMessage = (area, abogado, numero) => {
-    let message;
+    let message = "";
     if (area == "Derecho del Trabajo" || area == "Derecho Comercial") {
       message = `Nuestra especialista en ${area} es la ${abogado}. Puede ponerse en contacto llamando al ${numero}`;
     } else {
