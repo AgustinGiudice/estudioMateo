@@ -32,8 +32,8 @@ function Home() {
           <div className={styles.containertarjetas}>
             <TarjetaPractica
               area="Derecho del Trabajo"
-              contenido="Asesoramos en materia de ** despidos, accidentes de trabajo, enfermedades profesionales ,empleo público provincial y municipal.** "
-              contenido2="También realizamos la tramitación de expedientes en sede administrativa (**Comisiones Médicas, Ministerio de Trabajo ** ) así como también  ** en sede judicial **  (Provincia de Buenos Aires y Capital Federal)."
+              contenido="Asesoramos en materia de ** despidos, accidentes de trabajo, enfermedades profesionales, empleo público provincial y municipal.** "
+              contenido2="También realizamos la tramitación de expedientes en sede administrativa (**Comisiones Médicas, Ministerio de Trabajo**) así como también  ** en sede judicial **  (Provincia de Buenos Aires y Capital Federal)."
               abogado="Dra. Sara Adriana Nasiff"
               link="trabajo"
               numero="+54 11 6828-5284"
