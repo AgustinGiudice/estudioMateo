@@ -252,6 +252,7 @@ function obtenerIndiceCoincidencias(userMessage) {
 function ChatBot2() {
   const navigate = useNavigate();
   const [chatOpen, setChatOpen] = useState(true);
+  const [abogadoSelected, setAbogadoSelected] = useState("");
   const [userMessage, setUserMessage] = useState();
   const [messages, setMessages] = useState([
     {
@@ -270,11 +271,27 @@ function ChatBot2() {
     setMessages((prevMessages) => [...prevMessages, { text, from }]);
   };
 
+  const customMessage = (area, abogado, numero) => {
+    let message;
+    if (area == "Derecho del Trabajo" || area == "Derecho Comercial") {
+      message = `Nuestra especialista en ${area} es la ${abogado}. Puede ponerse en contacto llamando al ${numero}`;
+    } else {
+      message = `Nuestro especialista en ${area} es el ${abogado}. Puede ponerse en contacto llamando al ${numero}`;
+    }
+    return message;
+  };
+
   const selectOption = (index) => {
     const selectedArea = derechoData[index];
     // Simula que el usuario envía un mensaje con su selección antes de recibir la respuesta del bot
     sendMessage(`Seleccionaste ${selectedArea.area}`, "bot");
-    const respuestaBot = `Nuestro especialista en ${selectedArea.area} es el/la ${selectedArea.abogado}. Puede ponerse en contacto llamando al ${selectedArea.numero}`;
+    console.log("AREA SELECCIONADA" + selectedArea.area);
+    let respuestaBot = customMessage(
+      selectedArea.area,
+      selectedArea.abogado,
+      selectedArea.numero
+    );
+    // const respuestaBot = `Nuestro especialista en ${selectedArea.area} es el/la ${selectedArea.abogado}. Puede ponerse en contacto llamando al ${selectedArea.numero}`;
     // Añadir la respuesta del bot primero
     setTimeout(() => {
       sendMessage(`${respuestaBot}`, "bot");
@@ -308,7 +325,11 @@ function ChatBot2() {
     const selectedArea = derechoData[index];
 
     const respuestaBot1 = `Por lo que me contás, creo que necesitas asesoramiento en ${selectedArea.area}.`;
-    const respuestaBot2 = `Nuestro especialista en ${selectedArea.area} es el/la ${selectedArea.abogado}. Puede ponerse en contacto llamando o mandando un mensaje de Whatsapp al ${selectedArea.numero}`;
+    let respuestaBot2 = customMessage(
+      selectedArea.area,
+      selectedArea.abogado,
+      selectedArea.numero
+    );
 
     setTimeout(() => {
       sendMessage(`${respuestaBot1}`, "bot");
