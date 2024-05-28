@@ -285,7 +285,6 @@ function ChatBot2() {
     const selectedArea = derechoData[index];
     // Simula que el usuario envía un mensaje con su selección antes de recibir la respuesta del bot
     sendMessage(`Seleccionaste ${selectedArea.area}`, "bot");
-    console.log("AREA SELECCIONADA" + selectedArea.area);
     let respuestaBot = customMessage(
       selectedArea.area,
       selectedArea.abogado,
