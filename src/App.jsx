@@ -8,10 +8,12 @@ import { Footer } from "./components/footer/Footer";
 //vistas
 import Home from "./pages/home/Home";
 import Derechos from "./pages/derechos/Derechos";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <main className="container">
         <Navbar />
         <Routes>
