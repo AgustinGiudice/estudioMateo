@@ -32,8 +32,8 @@ function Home() {
           <div className={styles.containertarjetas}>
             <TarjetaPractica
               area="Derecho del Trabajo"
-              contenido="Asesoramos en materia de ** despidos, accidentes de trabajo, enfermedades profesionales ,empleo público provincial y municipal.** "
-              contenido2="También realiza la tramitación de expedientes en sede administrativa (**Comisiones Médicas, Ministerio de Trabajo ** ) así como también  ** en sede judicial **  (Provincia de Buenos Aires y Capital Federal)."
+              contenido="Asesoramos en materia de ** despidos, accidentes de trabajo, enfermedades profesionales, empleo público provincial y municipal.** "
+              contenido2="También realizamos la tramitación de expedientes en sede administrativa (**Comisiones Médicas, Ministerio de Trabajo**) así como también  ** en sede judicial **  (Provincia de Buenos Aires y Capital Federal)."
               abogado="Dra. Sara Adriana Nasiff"
               link="trabajo"
               numero="+54 11 6828-5284"
@@ -79,17 +79,17 @@ function Home() {
                     target="_blank"
                     className={styles.link}
                   >
-                    <IoCompassOutline color="#fff" size={iconSize} />
+                    <IoCompassOutline color="#fff" size="36" />
                     <p>Avenida Centenario 725 Piso 1 “B” San Isidro</p>
                   </a>
                 </div>
                 <div className={styles.infoContacto}>
                   <a
-                    href={`mailto:ramiromateo@estudiomateo.com.ar`}
+                    href={`mailto:contacto@estudiomateo.com.ar`}
                     className={styles.link}
                   >
                     <VscMail color="#fff" size={iconSize} />
-                    <p>consultas@ramiromateo.com</p>
+                    <p>contacto@estudiomateo.com.ar</p>
                   </a>
                 </div>
                 <div className={styles.infoContacto}>
@@ -103,10 +103,17 @@ function Home() {
                   </a>
                 </div>
                 <div className={styles.infoContacto}>
-                  <a href="tel:+541148729354" className={styles.link}>
-                    <BsTelephone color="#fff" size={iconSize} />
-                    <p>4872-9354</p>
-                  </a>
+                  <div>
+                    <BsTelephone color="#fff" size="31" />
+                    <div className={styles.numeros}>
+                      <a href="tel:+541148729354" className={styles.link}>
+                        <p>4872-9354</p>
+                      </a>
+                      <a href="tel:+541147477155" className={styles.link}>
+                        <p>4747-7155</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className={styles.infoContacto}>
                   <a

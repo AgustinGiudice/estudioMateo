@@ -87,6 +87,16 @@
   margin: 0rem 0rem 1rem 0rem;
 }
 
+.infoContacto div {
+  display: flex;
+}
+.numeros {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .infoContacto p {
   width: 100%;
   display: flex;
@@ -94,6 +104,11 @@
   align-items: center;
   text-align: center;
   color: var(--blanco);
+}
+
+.infoContacto div {
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -182,7 +197,9 @@
   display: flex;
   align-items: center;
 }
-
+.textoNosotros p {
+  text-align: justify;
+}
 @media (max-width: 1250px) {
   .nosotrosSubContainer {
     flex-direction: column;
