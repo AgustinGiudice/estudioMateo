@@ -329,15 +329,13 @@ function ChatBot2() {
             {msg.text}
             {msg.options &&
               msg.options.map((option, i) => (
-                <>
-                  <button
-                    key={i}
-                    onClick={option.action}
-                    className="option-button"
-                  >
-                    {option.text}
-                  </button>
-                </>
+                <button
+                  key={i}
+                  onClick={option.action}
+                  className="option-button"
+                >
+                  {option.text}
+                </button>
               ))}
           </div>
         ))}
